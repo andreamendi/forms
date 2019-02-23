@@ -1,0 +1,143 @@
+:root{
+    --primary-color: #E3E4DB;
+    --secondary-color: #F46036;
+    --background-color: #FDFFFF;
+    --footer-color: #FFBA49;
+    --header-color: #6C91BF;
+    --body-font: Ubuntu;
+    --ligth-font: Raleway;
+    --forms: Quicksand;
+}
+
+/* 
+
+Es para jalar cualquier fuente que se haya descargado.
+
+@font-face{
+    font-family: '';
+    src: url('');
+} */
+
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Fjalla One', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+}
+
+header{
+    background-color: var(--header-color);
+    width: 100%;
+}
+header h1{
+    text-align: center;
+    padding: 1vw;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #FFBA49;
+    font-family: Quicksand;
+}
+.medios{
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top; 
+    text-align: center;
+}
+.left-size{    
+    width: 67vw;
+    /* background-color: indianred; */
+    height: 60vh;
+}
+.rigth-size{
+    width: 33vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:#778DA9;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    min-height: 60vh;
+}
+.confirm{
+    min-height: 30vh;
+    width: 100%;
+    background-color: #6DD3CE;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer{
+    background-color: var(--footer-color);
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-family: Raleway;
+    display: none;
+}
+.travel-data{
+    font-family: Ubuntu;
+}
+.traveler-data{
+    font-size: 1vw;
+    font-family: Quicksand;
+    border-radius: 6px;
+    width: 20vw;
+}
+.orderConfirm{
+    font-family: Ubuntu;
+    background-color: #FF595E ;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 20px;
+    width: 20vw;
+    font-size: 1vw;
+}
+.image-destiny{
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    padding: 3px;
+    width: 10vw;
+    border-radius: 4px;
+}
+.random-ofert{
+    background-color: var(--primary-color);
+    font-family: Fjalla One;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 40px;
+    margin: 10px;
+}
+.pre-reservation{
+    font-family: var(--ligth-font);
+}
+.confirmTravel{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+
+@media (max-width:600px){
+    header h1{
+        color: blue;
+       
+    }
+    .image-destiny{
+        display: none;
+    }
+}
+
+@media (min-width: 900px){
+    footer{
+        display: inherit;
+    }
+}

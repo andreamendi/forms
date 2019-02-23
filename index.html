@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contend="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <link rel="icon" href="assets/img/rocket.png">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Quicksand|Raleway|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+</head>
+    <body>
+        <header>
+            <img src="assets/img/mars-icon.svg" alt="mars-icon">
+            <h1>2Mars!</h1>
+        </header>
+        <main> <!--Middle-->
+            <section class="left-size  medios">
+                <h3 class="travel-data">Datos para tu Viaje</h3>
+                <form id="travelForm" >
+
+                    <label for="name">Nombre</label>
+                    <input id="name" class="traveler-data" type="text" name="name" placeholder="Andrea Mendi">
+
+                    <br><br>
+                    
+                    <label for="dateTravel">Fecha del viaje:</label>
+                    <input class="traveler-data" id="dateTravel" type="date" name="date travel" min="2019-03-01" max="2019-12-31">
+                    
+                    <br><br>
+
+                    <label placeholder="--Select--" for="travelClass">Clase:</label>
+                    <select name="travelClass" id="travelClass">
+                        <option>-- Select</option>
+                        <option value="business-plus">Business Plus</option>
+                        <option value="business">Business</option>
+                        <option value="turist-plus">Turist Plus </option>
+                        <option value="turist">Turist</option>
+                        <option value="ac">Accessibility</option>
+                    </select>
+                    
+                    <br><br>
+                    
+
+                    <label for="travelDestiny">Destino:</label>
+                    <select name="travelDestiny" id="travelDestiny">
+                        <option>-- Select</option>
+                        <option value="mars">Marte</option>
+                        <option value="earth">Tierra</option>
+                        <option value="venus">Venus</option>
+                        <option value="jupiter">Júpiter</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Otr@ pasajer@" >
+                </form>
+
+            </section><section class="rigth-size medios">
+                <div class="random-ofert">
+                    <h4>Oferta Random</h4>
+                    <p>Viaja a Artemisa, Luna. a partir del 2 de mayo del 2019.</p>
+                </div>
+                <div class="random-ofert">
+                    <h2 class="pre-reservation"> Confirmación
+                        
+                    </h2> 
+                    <div id="listConfirmLast"></div> 
+                    <div id="numeroViajeros"></div>
+                </div>
+                
+            </section>
+        </main>
+        <section class="confirm">
+           <h2 class="pre-reservation">Pre reservación</h2>
+            <ul id="listConfirm"></ul> 
+            <div id="confirmar"></div>
+            
+        </section>
+        <footer>
+            <p>With <i class="em em-heart"></i> & <i class="em em-rocket"></i> by <a href="https://github.com/andreamendi">@andreamendii</a></p>
+        </footer>
+        <script src="assets/scripts.js"></script> 
+    </body>
+</html>
